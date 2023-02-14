@@ -3,3 +3,31 @@
   padding: 25rem 0;
   margin-top: -20vh;
 }
+
+.section-features {
+  background-image: linear-gradient(to right bottom,
+      rgba($color-primary-first, 0.628),
+      rgba($color-primary-second, 0.627)),
+    url(../img/table.jpg);
+  background-size: cover;
+  padding: 20rem 0;
+  margin-top: -10rem;
+
+  //to tilt the background
+  transform: skewY(-7deg);
+
+  &>* {
+    transform: skewY(7deg);
+  }
+}
+
+.section-tours {
+  background-color: $color-gray-light-1;
+  padding: 25rem 0 15rem 0;
+  margin-top: -10rem;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: $color-gray-light-1;
+}
