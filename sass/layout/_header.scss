@@ -2,12 +2,13 @@
 .header {
     height: 95vh;
     background-image: linear-gradient(to right bottom,
-            rgba($color-red, 0.628),
-            rgba($color-blue, 0.627)),
+            rgba($color-primary-first, 0.628),
+            rgba($color-primary-second, 0.627)),
         url(../img/sky.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 
     &__logo-box {
